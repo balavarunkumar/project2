@@ -1,0 +1,158 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html,
+body {
+ height: 100vh;
+ width: 100vw;
+ font-size: 2vh;
+ background-color: rgb(255, 255, 255);
+}
+
+
+nav {
+ display: flex;
+ align-items: center;
+ height: 10%;
+ width: 100%;
+ gap: 1%;
+ padding: 1% 2%;
+ margin-right: 5%;
+ justify-content: flex-end;
+
+}
+
+nav i {
+ color: white;
+ background-color: black;
+ padding: 9px;
+ border-radius: 50%;
+}
+
+
+main {
+ height: 50%;
+ width: 100%;
+ background-color: rgb(255, 255, 255);
+
+}
+
+#upper {
+ height: 60%;
+ width: 100%;
+ padding: 5% 4%;
+}
+
+#upper h1 {
+ font-weight: 400;
+ font-size: 3rem;
+ line-height: 1;
+ font-family: sans-serif;
+}
+
+#lower {
+ display: flex;
+ background-color: rgb(255, 255, 255);
+ justify-content: space-between;
+ height: 40%;
+ width: 100%;
+ padding: 0% 4%;
+}
+
+.lower-right {
+ margin-top: 10px;
+}
+
+.element {
+ background-color: rgb(255, 255, 255);
+ border-top: 2px solid black;
+ padding: 8px 0px;
+ width: 10vw;
+ font-size: 1.5rem;
+ display: flex;
+ justify-content: space-between;
+}
+
+.element a {
+ color: black;
+ text-decoration: none;
+}
+
+.element i {
+ opacity: 0;
+}
+
+.element:hover i {
+ opacity: 1;
+}
+
+footer {
+ height: 40%;
+ width: 100%;
+ background: url("https://images.unsplash.com/photo-1590849446796-a5be2de863a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: 0 20%;
+}
+
+@media (max-width:1672px) {
+ nav {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  gap: 2%;
+  padding: 1% 2%;
+  margin-right: 2%;
+  justify-content: flex-end;
+
+ }
+
+ main {
+  height: 60%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+
+ }
+
+ #upper {
+  height: 40%;
+  width: 100%;
+  padding: 5% 4%;
+ }
+
+ #upper h1 {
+  font-weight: 300;
+  font-size: 2.7rem;
+  line-height: 1;
+  font-family: sans-serif;
+ }
+
+ #lower {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-evenly;
+  height: 60%;
+  width: 100%;
+  padding: 0.5% 4%;
+ }
+
+ .lower-right {
+  margin-top: 5px;
+ }
+
+ .element {
+  background-color: rgb(255, 255, 255);
+  border-top: 2px solid black;
+  padding: 8px 0px;
+  width: 100%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+ }
+
+}

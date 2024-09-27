@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Text with rem</title>
+    <style>
+        /* Global font size defined on the root element */
+        html {
+            font-size: 16px; /* This is the default font size (16px = 1rem) */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Heading and text styles using rem */
+        h1 {
+            font-size: 2.5rem; /* 2.5rem = 40px (2.5 * 16px) */
+            margin: 1rem 0;
+        }
+
+        h2 {
+            font-size: 2rem; /* 2rem = 32px */
+            margin: 0.8rem 0;
+        }
+
+        p {
+            font-size: 1rem; /* 1rem = 16px */
+            margin: 0.5rem 0;
+        }
+
+        /* Smaller text for less important sections */
+        small {
+            font-size: 0.75rem; /* 0.75rem = 12px */
+        }
+
+        /* Media Query for larger screens */
+        @media (min-width: 768px) {
+            html {
+                font-size: 18px; /* Scaling up the base font size */
+            }
+
+            h1 {
+                font-size: 3rem; /* 3rem = 54px */
+            }
+
+            h2 {
+                font-size: 2.5rem; /* 2.5rem = 45px */
+            }
+
+            p {
+                font-size: 1.125rem; /* 1.125rem = 20.25px */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Responsive Design</h1>
+    <h2>Using rem for Text Sizes</h2>
+    <p>
+        This paragraph uses <code>1rem</code>, which equals 16px by default. On wider screens (768px and up), the base font size will increase to 18px.
+    </p>
+    <p>
+        <small>This text uses <code>0.75rem</code>, which is 12px by default and 13.5px on wider screens.</small>
+    </p>
+
+</body>
+</html>
